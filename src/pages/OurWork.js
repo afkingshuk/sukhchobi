@@ -8,7 +8,8 @@ import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 //animate
-import { motion, motionValue } from "framer-motion";
+// import { motion, motionValue } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   sliderContainer,
   slider,
