@@ -42,10 +42,11 @@ const StyledNav = styled.nav`
     list-style: none;
   }
   #logo {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-family: "Gloock", serif;
     font-weight: lighter;
-    color: snow;
+    /* color: snow; */
+    color: linear-gradient(20deg, hsl(60%, 60%, 65%), hsl(60%, 64%, 60%));
   }
   li {
     padding-left: 10rem;

@@ -9,10 +9,15 @@ import home2 from "../img/home2.png";
 //
 import { About, Description, Image } from "../styles";
 import styled from "styled-components";
+import { fade } from "../animation";
+import { useScroller } from "./useScroller";
 
 const ServicesSection = () => {
+  const [element, controls] = useScroller(); //custom hook
+
   return (
-    <Services>
+    <Services variants={fade} animate={controls} initial="hidden" ref={element}>
+    {/* <Services> */}
       <Description>
         <h2>
           {" "}
