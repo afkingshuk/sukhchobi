@@ -13,14 +13,16 @@ import MovieDetail from "./pages/MovieDetail";
 import { Routes, Route, useLocation } from "react-router-dom";
 //animation
 import { AnimatePresence } from "framer-motion";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
+      <ScrollTop />
       <Nav />
-      <AnimatePresence mode='wait'>
+      <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<AboutUs />} />
           <Route path="/work" element={<OurWork />} />
